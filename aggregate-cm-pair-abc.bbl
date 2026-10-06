@@ -1,0 +1,109 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{AlsinaChatzakos}
+Montserrat Alsina and Dimitrios Chatzakos, \emph{{CM}-points and lattice
+  counting on arithmetic compact {Riemann} surfaces}, Journal of Number Theory
+  \textbf{212} (2020), 339--353.
+
+\bibitem{BlomerHolowinsky}
+Valentin Blomer and Roman Holowinsky, \emph{Bounding sup-norms of cusp forms of
+  large level}, Inventiones Mathematicae \textbf{179} (2010), no.~3, 645--681.
+
+\bibitem{BruinierLiMoller}
+Jan~Hendrik Bruinier, Yingkun Li, and Martin M\"oller, \emph{Intersections of
+  special cycles on {Shimura} curves and {Siegel} {Maass} forms}, 2026,
+  arXiv:2602.16248v1 [math.NT], February 2026.
+
+\bibitem{DasSengupta}
+Soumya Das and Jyoti Sengupta, \emph{{$L^\infty$} norms of holomorphic modular
+  forms in the case of compact quotient}, Forum Mathematicum \textbf{27}
+  (2015), no.~4, 1987--2001.
+
+\bibitem{HarcosMichel}
+Gergely Harcos and Philippe Michel, \emph{The subconvexity problem for
+  {Rankin--Selberg} {L}-functions and equidistribution of {Heegner} points.
+  {II}}, Inventiones Mathematicae \textbf{163} (2006), 581--655.
+
+\bibitem{HumphriesRadziwill}
+Peter Humphries and Maksym Radziwi\l\l, \emph{Optimal small scale
+  equidistribution of lattice points on the sphere, {Heegner} points, and
+  closed geodesics}, Communications on Pure and Applied Mathematics \textbf{75}
+  (2022), 1936--1996.
+
+\bibitem{Khayutin}
+Ilya Khayutin, \emph{Joint equidistribution of {CM} points}, Annals of
+  Mathematics \textbf{189} (2019), no.~1, 145--276.
+
+\bibitem{KudlaRapoportYang}
+Stephen~S. Kudla, Michael Rapoport, and Tonghai Yang, \emph{Modular forms and
+  special cycles on {Shimura} curves}, Annals of Mathematics Studies, vol. 161,
+  Princeton University Press, Princeton, NJ, 2006.
+
+\bibitem{LiuMasriYoung}
+Sheng-Chi Liu, Riad Masri, and Matthew~P. Young, \emph{Subconvexity and
+  equidistribution of {Heegner} points in the level aspect}, Compositio
+  Mathematica \textbf{149} (2013), 1150--1174.
+
+\bibitem{MichelHeegner}
+Philippe Michel, \emph{The subconvexity problem for {Rankin--Selberg}
+  {L}-functions and equidistribution of {Heegner} points}, Annals of
+  Mathematics \textbf{160} (2004), no.~1, 185--236.
+
+\bibitem{PadurariuSaia}
+Oana Padurariu and Frederick Saia, \emph{Bielliptic {Shimura} curves
+  {$X_0^D(N)$} with nontrivial level}, Research in Number Theory \textbf{11}
+  (2025), no.~1, Paper No. 2, 23 pp., Correction, ibid. \textbf{11} (2025),
+  no.~4, Paper No.~98; arXiv:2401.08829 [math.NT].
+
+\bibitem{Pasten}
+Hector Pasten, \emph{Shimura curves and the {$abc$} conjecture}, Journal of
+  Number Theory \textbf{254} (2024), 214--335.
+
+\bibitem{PastenSepulveda}
+Hector Pasten and Roc\'io Sep\'ulveda-Manzo, \emph{On the $abc$ and the $abcd$
+  conjectures}, Bulletin of the Brazilian Mathematical Society, New Series
+  \textbf{56} (2025), no.~4, 54, arXiv:2406.05083 [math.NT].
+
+\bibitem{Ratcliffe}
+John~G. Ratcliffe, \emph{Foundations of hyperbolic manifolds}, third ed.,
+  Graduate Texts in Mathematics, vol. 149, Springer, Cham, 2019.
+
+\bibitem{Rickards}
+James Rickards, \emph{Counting intersection numbers of closed geodesics on
+  {Shimura} curves}, Research in Number Theory \textbf{9} (2023), no.~2,
+  Article 20.
+
+\bibitem{WieserYang}
+Andreas Wieser and Pengyu Yang, \emph{A uniform {Linnik} basic lemma and
+  entropy bounds}, 2026, Commentarii Mathematici Helvetici, published online
+  January 22, 2026; arXiv:2201.05380 [math.NT].
+
+\bibitem{YangLocalDensities}
+Tonghai Yang, \emph{An explicit formula for local densities of quadratic
+  forms}, Journal of Number Theory \textbf{72} (1998), no.~2, 309--356.
+
+\bibitem{YangDyadicDensities}
+Tonghai Yang, \emph{Local densities of 2-adic quadratic forms}, Journal of Number
+  Theory \textbf{108} (2004), no.~2, 287--345.
+
+\bibitem{YuanZhangColmez}
+Xinyi Yuan and Shou-Wu Zhang, \emph{On the averaged {Colmez} conjecture},
+  Annals of Mathematics \textbf{187} (2018), no.~2, 533--638.
+
+\bibitem{ZhangHeegner}
+Shou-Wu Zhang, \emph{Heights of {Heegner} points on {Shimura} curves}, Annals
+  of Mathematics \textbf{153} (2001), no.~1, 27--147.
+
+\bibitem{ZhangCMEquidistribution}
+Shou-Wu Zhang, \emph{Equidistribution of {CM}-points on quaternion {Shimura}
+  varieties}, International Mathematics Research Notices (2005), no.~59,
+  3657--3689.
+
+\end{thebibliography}
