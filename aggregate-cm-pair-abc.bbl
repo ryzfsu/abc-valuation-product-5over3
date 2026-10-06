@@ -80,18 +80,14 @@ James Rickards, \emph{Counting intersection numbers of closed geodesics on
   {Shimura} curves}, Research in Number Theory \textbf{9} (2023), no.~2,
   Article 20.
 
+\bibitem{Voight}
+John Voight, \emph{Quaternion algebras}, Graduate Texts in Mathematics, vol.
+  288, Springer, Cham, 2021.
+
 \bibitem{WieserYang}
 Andreas Wieser and Pengyu Yang, \emph{A uniform {Linnik} basic lemma and
   entropy bounds}, 2026, Commentarii Mathematici Helvetici, published online
   January 22, 2026; arXiv:2201.05380 [math.NT].
-
-\bibitem{YangLocalDensities}
-Tonghai Yang, \emph{An explicit formula for local densities of quadratic
-  forms}, Journal of Number Theory \textbf{72} (1998), no.~2, 309--356.
-
-\bibitem{YangDyadicDensities}
-Tonghai Yang, \emph{Local densities of 2-adic quadratic forms}, Journal of Number
-  Theory \textbf{108} (2004), no.~2, 287--345.
 
 \bibitem{YuanZhangColmez}
 Xinyi Yuan and Shou-Wu Zhang, \emph{On the averaged {Colmez} conjecture},
@@ -102,7 +98,7 @@ Shou-Wu Zhang, \emph{Heights of {Heegner} points on {Shimura} curves}, Annals
   of Mathematics \textbf{153} (2001), no.~1, 27--147.
 
 \bibitem{ZhangCMEquidistribution}
-Shou-Wu Zhang, \emph{Equidistribution of {CM}-points on quaternion {Shimura}
+\bysame, \emph{Equidistribution of {CM}-points on quaternion {Shimura}
   varieties}, International Mathematics Research Notices (2005), no.~59,
   3657--3689.
 

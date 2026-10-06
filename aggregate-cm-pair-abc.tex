@@ -51,7 +51,7 @@ where $\dd$ is taken to be the divisor function. The first step in the deduction
  \ll |\mathscr P_\Delta|+
  \Delta\left(1+\frac{\Delta^2}{N}\right)N^\eps,
 \]
-which holds uniformly in all polynomial ranges $\Delta\leq N^A$. This is established from the published local-density formulas, which are used with the characteristic-matrix framework of Bruinier, Li and M\"oller. The spatial Cauchy--Schwarz then yields a bound for the first absolute moment of the CM-packet. The ordinary AM--GM now applies directly to the logarithmic average in Pasten's Arakelov estimate to complete the argument, and neither a fourth moment nor a pointwise subconvexity estimate is required.
+which holds uniformly in all polynomial ranges $\Delta\leq N^A$. This is established by an elementary local orbit count in the Bruhat--Tits tree, using the characteristic-matrix framework of Bruinier, Li and M\"oller. The spatial Cauchy--Schwarz then yields a bound for the first absolute moment of the CM-packet. The ordinary AM--GM now applies directly to the logarithmic average in Pasten's Arakelov estimate to complete the argument, and neither a fourth moment nor a pointwise subconvexity estimate is required.
 
 \end{abstract}
 \maketitle
@@ -78,12 +78,10 @@ closed geodesics associated with pairs of real quadratic embeddings. These formu
 quadratic vectors. More specifically, their formula gives the number of pairs of Heegner points
 at a given distance, and this number is a product of local factors
 \cite[Theorem 1.1(iv) and Corollary 5.9]{BruinierLiMoller}. We use Bruinier--Li--M\"oller's characteristic-matrix and distance
-formalism, 
-but we derive our coarse orbit bound directly from the published results
-on the orbital integrals and local densities of Kudla--Rapoport--Yang
-\cite[Proposition 5.3.6 and Chapter 5]{KudlaRapoportYang} and Yang's odd and
-dyadic formulas \cite[Theorem 7.1]{YangLocalDensities} and \cite[Theorem
-4.4]{YangDyadicDensities}. The aggregate estimate provides us with the divisor-sum bound we need for
+formalism, but prove the coarse orbit bound needed here directly from the
+local structure of quaternion orders and the Bruhat--Tits tree
+\cite[Equation (23.2.4), Theorem 13.3.11, and Sections
+23.5.11--23.5.16]{Voight}. The aggregate estimate provides us with the divisor-sum bound we need for
 Pasten's argument.
 
 In the context of the theory of special cycles, Heegner points, and
@@ -121,10 +119,11 @@ in $\mathscr P_\Delta$ is at most $B_0$, then
  \ll_{A,r_0,B_0,\eps}
  |\mathscr P_\Delta|+
  \Delta\left(1+\frac{\Delta^2}{N}\right)N^\eps.
-\] The estimate is uniform in the chosen discriminant submultiset.
+\] The estimate is uniform both in the chosen discriminant submultiset and
+in the admissible factorization $N=DM$.
 \end{theorem}
 
-For pairs lying on the off-diagonal, we will set $-d,-e$ to be the discriminants and $b$ to be the integral pairing parameter. The local conditions state that the odd part of $N$ has to divide $b^2-de$. The published results on local densities allow us to compute an upper bound of $N^\eps$ for each orbit count. After we have fixed the radius we will be down to $O_{r_0}(\Delta(1+\Delta^2/N))$ choices for $b$ and the quotient. These choices fix $de$, and $de$ can have at most $N^\eps$ admissible factorizations. Further, the thinning of the packets considered here will only eliminate pairs.
+For pairs lying on the off-diagonal, we will set $-d,-e$ to be the discriminants and $b$ to be the integral pairing parameter. The local conditions state that the odd part of $N$ has to divide $b^2-de$. A direct local orbit count gives an upper bound of $N^\eps$ for each global orbit count. After we have fixed the radius we will be down to $O_{r_0}(\Delta(1+\Delta^2/N))$ choices for $b$ and the quotient. These choices fix $de$, and $de$ can have at most $N^\eps$ admissible factorizations. Further, the thinning of the packets considered here will only eliminate pairs.
 
 
 In the case of $\mathscr P$, that is, the corresponding full Galois CM
@@ -154,7 +153,7 @@ are left, and we let $\delta\to0$ to obtain the proof of
 
 \section{Quaternionic CM packets}\label{sec:setup}
 
-Let $B$ represent an indefinite quaternion division algebra over $\Q$, and let $R_N$ denote an Eichler order of reduced discriminant $N=DM$, where $D$ is the discriminant of $B$ and $M$ the Eichler level. We assume that the odd part of $N$ is square-free and that $v_2(N)\leq8$. Write
+Let $B$ represent an indefinite quaternion division algebra over $\Q$, and let $R_N$ denote an Eichler order of reduced discriminant $N=DM$, where $D$ is the discriminant of $B$ and $M$ the Eichler level. As in Pasten, a factorization $N=DM$ is called admissible when $(D,M)=1$ and $D$ is the product of an even number of distinct primes; in the compact case considered below, $D>1$. We assume that the odd part of $N$ is square-free and that $v_2(N)\leq8$. Write
 \[
  \Gamma_N=R_N^1/\{\pm1\},\qquad X_N=\Gamma_N\backslash\Hh.
 \]
@@ -236,10 +235,9 @@ definition of $R_T$ together with \cite[Equation
 in use for their subsequent local computations is reset to the localization
 of this same index-four lattice. Their count allows for the inclusion of imprimitive pairs while the CM
 centers are derived from primitive vectors, so we can see that the latter
-classes form a subset. The bound for the entire orbit set below relies on the
-published local-density formulas of Kudla--Rapoport--Yang, whereas we will
-not use the stronger, exact formula of Bruinier--Li--M\"oller as a logical
-input.
+classes form a subset. The bound for the entire orbit set below is obtained
+from a direct local coset count and does not use an exact local-density
+formula.
 Indeed, a CM center determines its negative rational line, on which a
 primitive vector of norm $-d$ is unique up to sign, since any two such
 vectors differ by a rational scalar with square equal to one. In moving to the quotient, at most an elliptic
@@ -259,11 +257,13 @@ Let
  T=\begin{pmatrix}-d&b\\ b&-e\end{pmatrix},
  \qquad N^\flat=N/2^{v_2(N)},
 \]
-and we will assume that $T$ is nonsingular. We let $R_T(D,M)$ denote the complete set of all norm-one equivalence
+where $-d,-e$ are odd fundamental discriminants, $(de,N)=1$, $b$ is
+odd, and $T$ is nonsingular. Assume that the odd part of $N$ is square-free
+and $v_2(N)\leq8$. We let $R_T(D,M)$ denote the complete set of all norm-one equivalence
 classes with characteristic matrix $T$, for the order of
 discriminant $D$ and level $M$. When the order is clear we write $R_T$ for that set. If $R_T$ is nonempty, then
 \begin{equation}\label{eq:n-flat}
- N/N^\flat\leq2^8,\qquad N^\flat\mid b^2-de.
+ N^\flat\mid b^2-de.
 \end{equation}
 Moreover, uniformly for $d,e\asymp\Delta$, $|b|\ll_{r_0}\Delta$, and
 $\Delta\leq N^A$,
@@ -279,180 +279,163 @@ overorder of $R_N$ of level $M_0$; admissibility gives $2\nmid D$.  Then
  L_N\subset L_{DM_0},\qquad \Gamma_N\subset\Gamma_{DM_0}.
 \]
 Thus every $\Gamma_{DM_0}$-orbit splits into at most
-$[\Gamma_{DM_0}:\Gamma_N]$ many orbits of $\Gamma_N$.  The exact volume
-formula therefore gives
+$[\Gamma_{DM_0}:\Gamma_N]$ many orbits of $\Gamma_N$.  The local Eichler
+index, equivalently the quotient of the exact volume formulas in
+\cite[Equation (2.7)]{BruinierLiMoller}, is
 \begin{equation}\label{eq:two-index}
  |R_T(D,M)|\leq[\Gamma_{DM_0}:\Gamma_N]|R_T(D,M_0)|,
  \qquad
  [\Gamma_{DM_0}:\Gamma_N]=3\cdot2^{k-1}\leq384.
 \end{equation}
-It remains to treat $M=M_0$ odd.
+It remains to treat the odd-level order.  Put
+$N_0=DM_0$, $R=R_{N_0}$, $L=L(R)$, and
+$\Gamma=R^1/\{\pm1\}$ for the rest of this proof.  Notice that the odd
+part of $N_0$ is $N^\flat$.
 
-Use the standard identification $G=\operatorname{SO}(B^0)\simeq
-B^\times/\Q^\times$. Let $\Kc_p$ be the image of $R_{N,p}^{\times}$ in $G(\Q_p)$ and put
-$\Kc=\prod_p\Kc_p$. Let $\varphi_p$ be the characteristic function of
-$L_{N,p}^2$ and $\varphi_f=\prod_p\varphi_p$. Fix a rational
-pair $x_0$ with Gram matrix $T$. Using the Witt extension, we see that every rational pair with Gram matrix
-$T$ lies in its $G(\Q)$-orbit. This is because an isometry between the two nondegenerate planes can be
-extended to the ambient space, and its determinant can then be corrected
-along the orthogonal line. The stabilizer of $x_0$ in $G$ is trivial. The reason is that it fixes that plane pointwise and that it must act as
-$+1$ on the one-dimensional orthogonal complement of that plane.
-
-In what follows we derive the precise coset form used here.  With the Haar measures of
-\cite[Section 5.3]{KudlaRapoportYang}, triviality of the stabilizer gives
+Put $G=\operatorname{SO}(B^0)\simeq B^\times/\Q^\times$.  Fix a rational
+pair $X_0=(x_0,y_0)$ with Gram matrix $T$, and, for each finite prime $p$,
+write
 \[
- O_{T,p}(\varphi_p)=\int_{G(\Q_p)}
- \varphi_p(g_p^{-1}x_0)\,dg_p.
+ \begin{aligned}
+  \Kc_p&=\operatorname{im}(R_p^\times\longrightarrow G(\Q_p)),\\
+  S_p(T)&=\{g\Kc_p:g^{-1}X_0\in L_p^2\},\\
+  c_p(T)&=\#S_p(T).
+ \end{aligned}
 \]
-Since $\varphi_p(-z)=\varphi_p(z)$, the
-$\operatorname{O}(B^0)(\Q_p)$-orbital integral in the KRY comparison equals
-the $G(\Q_p)$-orbital integral used here. The integrand is
-right $\Kc_p$-invariant. If we decompose its support into right $\Kc_p$-cosets, each one of which has
-measure $\vol(\Kc_p)$, and taking the restricted product, this gives
-\[
- \prod_p\frac{O_{T,p}(\varphi_p)}{\vol(\Kc_p)}
- =\#\{g\Kc\in G(\mathbb A_f)/\Kc:\varphi_f(g^{-1}x_0)=1\}.
-\]
-For almost every $p$, the data are unramified and $x_0\in L_{N,p}^2$. The
-unramified maximal-lattice formula \cite[Corollary
-5.2.5]{KudlaRapoportYang}, specialized below, gives
-$O_{T,p}(\varphi_p)/\vol(\Kc_p)=1$. The support is a union of right $\Kc_p$-cosets, each of them contributing
-one after division by $\vol(\Kc_p)$. 
-Note also that $\Kc_p$ itself lies in the support. 
-Then we conclude that the support is precisely that single coset. Thus both the product and the adelic support above are finite
-restricted products. In the nonsingular case, we see that the local supports contain finitely
-many such cosets. The corresponding component-sum identity we quote directly from
-\cite[Proposition 5.3.6]{KudlaRapoportYang}.
+The action of $G(F)$ on ordered pairs of Gram matrix $T$ is simply
+transitive for $F=\Q$ and $F=\Q_p$.  Indeed, an isometry between the two
+nondegenerate planes extends by Witt's theorem, its determinant can be
+corrected on the orthogonal line, and an element of $G(F)$ fixing the pair
+also fixes that line because it has determinant one.  The orbit map is a
+homeomorphism: its inverse is obtained by completing $(x,y)$ with their
+cross-product vector, and its only denominator is a fixed nonzero multiple
+of $\det T$.  Hence the inverse image of the closed integral Gram fiber in
+the compact set $L_p^2$ is compact.  Since $\Kc_p$ is open, every
+$S_p(T)$ is finite.
 
-By full-unit rational orbit set we mean equivalence under the image of
-$R_N^\times$ in $G(\Q)$. 
-As we check below, it maps into the adelic set on the right. Then we see
-that this map sends the equivalence class of $x=g^{-1}x_0$,
-with $g\in G(\Q)$, to $g\Kc$. This map is injective and well-defined because $G(\Q)\cap \Kc$ is the image of
-$R_N^\times$. In order to demonstrate the latter assertion, we may take a class in
-$G(\Q)\cap \Kc$ and represent it as $q\in B^\times(\Q)$. For each $p$ write $q=\lambda_pu_p$,
-with $\lambda_p\in\Q_p^\times$ and $u_p\in R_{N,p}^\times$, and put
-$n_p=v_p(\lambda_p)$. Taking reduced norms gives $v_p(\nrd(q))=2n_p$ because
-$\nrd(u_p)\in\Z_p^\times$, so we see that all but finitely many of the $n_p$
-vanish.
-For $s=\prod_p p^{-n_p}\in\Q^\times$, we have $s\lambda_p\in\Z_p^\times$,
-which gives $sq\in R_{N,p}^\times$ for all $p$. The same holds for $(sq)^{-1}$.
-Since $R_N=B(\Q)\cap\prod_pR_{N,p}$, we conclude that $sq,(sq)^{-1}\in R_N$,
-and hence that $sq\in R_N^\times$. 
-Finally, we note that the norm-one image lies in the full-unit image
-with index at most two. Hence, \begin{equation}\label{eq:kry-product}
-|R_T(D,M_0)|\leq2\prod_p\lambda_p(T),\qquad
-\lambda_p(T)=\frac{O_{T,p}(\varphi_p)}{\vol(\Kc_p)}, \end{equation} where
-$O_{T,p}$ denotes the local orbital integral calculated with the Haar
-measures of \cite[Section 5.3]{KudlaRapoportYang}.
-At all the unramified primes discussed previously, $\lambda_p(T)=1$. In this argument, we need no assertions about the
-connected component or the type-number.
-
-We now record how the published local formulas specialize in the case at
-hand.  Put
-$t=v_p(\det T)$.  At an odd prime let $p^{a_1},p^{a_2}$ be the elementary
-divisors of $T$.  Square-freeness of $d,e$ gives $a_1\leq1$, and
-$(de,N)=1$ gives $a_1=0$ at $p\mid N$.  Using the orbital integral/Whittaker comparison together with the
-maximal-lattice formula of \cite[Proposition 5.3.3, Lemma 5.3.9, and
-Corollary 5.2.5] {KudlaRapoportYang}, we read off, for the odd primes
-$p\nmid DM_0$, the value \[ \lambda_p(T)\leq t+1\quad(a_1=0),\qquad
-\lambda_p(T)=2\quad(a_1=1), \] whenever $T$ is represented, and zero
-otherwise. In the second
-case $t\geq2$. When $p$ is odd and $p\mid D$, the ramified formula \cite[Theorem 5.7.2 and
-Lemmas 5.3.9 and 5.7.1]{KudlaRapoportYang} shows that $\lambda_p(T)=2$
-whenever it is nonzero, and nonvanishing forces $t\geq1$.
-
-If $p\mid M_0$, then $v_p(M_0)=1$. The local trace-zero Eichler lattice is
-then the lattice carrying the quadratic form $a^2+pbc$. Since $a_1=0$, write
-$T\sim\operatorname{diag}(\varepsilon_1,\varepsilon_2p^t)$. Substituting
-$\langle1,p,-p\rangle$ and this $T$ into \cite[Theorem
-7.1]{YangLocalDensities} gives
-\[
- \alpha_p(T,L_{N,p})=(p-1)t
- \bigl(1+(\varepsilon_1,p)_p\bigr).
-\]
-Here $[L_{N,p}^{\#}:L_{N,p}]=p^2$ and $\Kc_p$ has index $p+1$ in the
-maximal compact. Since the Haar normalization of KRY is in force here, we can record that
-$\vol(\Kc_p^{\max})=1-p^{-2}$ and hence that $\vol(\Kc_p)=(p-1)/p^2$, while
-Lemma 5.7.1 gives us $O_{T,p}=\alpha_p/p^2$. Therefore $\lambda_p(T)=2t$ or $0$. In
-particular, nonvanishing forces $t\geq1$, and
-\begin{equation}\label{eq:level-local}
- 0\leq\lambda_p(T)\leq2t\leq(t+1)^2.
+We next record the global-to-local injection.  If $\Kc=\prod_p\Kc_p$, then
+\begin{equation}\label{eq:global-unit-intersection}
+ G(\Q)\cap\Kc=\operatorname{im}(R^\times).
+\end{equation}
+To see this, represent a class in the intersection by $q\in B^\times(\Q)$
+and write $q=\lambda_pu_p$ locally, with
+$\lambda_p\in\Q_p^\times$ and $u_p\in R_p^\times$.  Since
+$v_p(\nrd q)=2v_p(\lambda_p)$, multiplication by the rational number having
+valuation $-v_p(\lambda_p)$ at every $p$ gives an element, and its inverse,
+in every $R_p$.  The identity
+$R=B(\Q)\cap\prod_pR_p$ proves \eqref{eq:global-unit-intersection}.
+Simple transitivity now maps full-unit global orbits injectively into the
+restricted product $\prod_pS_p(T)$.  Passing from full units to norm-one units costs an index
+at most two, and hence
+\begin{equation}\label{eq:local-coset-product}
+ |R_T(D,M_0)|\leq2\prod_pc_p(T).
 \end{equation}
 
-At $p=2$, the odd fundamental-discriminant condition and
-\cref{lem:normalization} between them will give us $d\equiv e\equiv3\pmod4$,
-$b$ odd, and $t=v_2(\det T)\geq2$. Splitting off the unit entry $-d$ gives
+We count the local cosets directly.  At an odd prime, $L_p=R_p^0$.
+If $B_p$ is split and $R_p$ is maximal, then $G(\Q_p)/\Kc_p$ is the
+vertex set of the Bruhat--Tits tree.  An integral change in the two pair
+coordinates puts the first elementary divisor first.  If it is a unit,
+choose the first vector $x$ with $Q(x)=\epsilon\in\Z_p^\times$.  When
+$\epsilon$ is nonsquare, $\Z_p[x]$ is the maximal unramified quadratic
+order and its stable lattices give at most one homothety class.  When
+$\epsilon=s^2$, the integral idempotents put
 \[
- T\sim\operatorname{diag}(\epsilon_1,2^t\epsilon_2),\qquad
- \epsilon_i\in\Z_2^\times,\qquad
- \epsilon_1\equiv1\ \hbox{or}\ 5\pmod8.
+ x=\begin{pmatrix}s&0\\0&-s\end{pmatrix},\qquad
+ y=\begin{pmatrix}0&r\\u&0\end{pmatrix}.
 \]
-Since the level is odd, the two local Gross forms, along with their dual
-indices and the KRY compact volumes, are
+The $x$-stable lattices are
+$\Lambda_n=\Z_pe_1\oplus p^n\Z_pe_2$, and $y$ stabilizes $\Lambda_n$
+exactly for
 \[
-\begin{array}{c|c|c}
- & [L_{N,2}^{\#}:L_{N,2}]&\vol(\Kc_2)\\ \hline
- z^2+4uv\quad(2\nmid D)&2^5&3/8\\
- -3z^2-8(x^2+xy+y^2)\quad(2\mid D)&2^7&3/2.
-\end{array}
+ -v_p(r)\leq n\leq v_p(u).
 \]
-Here the volumes are \cite[Lemma 5.3.9]{KudlaRapoportYang}.  Put
+As $v_p(ru)=t:=v_p(\det T)$, this gives at most $t+1$ vertices.
+If the first elementary divisor is $p$, square-freeness of $d,e$ allows us
+to choose $Q(x)=p\epsilon$.  The order $\Z_p[x]$ is then the maximal order
+of a ramified quadratic field.  Its fractional ideals, modulo central
+homothety, have two parity classes, so $c_p(T)\leq2$; here $t\geq2$.
+
+If $p$ is an odd division prime, the unique maximal order and its Gross
+lattice are invariant under conjugation, while
 \[
- c_t(\epsilon_1)=
+ B_p^\times/(\Q_p^\times R_p^\times)\simeq\Z/2\Z.
+\]
+Thus a nonempty support has $c_p(T)=2$.  Reduction of $R_p^0$ modulo
+the radical is one-dimensional, so such a represented pair has
+$p\mid\det T$.  Finally, when $p\mid M_0$, the group $\Kc_p$ fixes an
+oriented edge.  Since $(de,N)=1$, the maximal-order support is either one
+vertex or an interval of $t+1$ vertices as above.  The former gives no
+edge, and the latter gives $2t$ oriented edges.  Hence
+\begin{equation}\label{eq:odd-local-counts}
+ c_p(T)\leq
  \begin{cases}
-  \max(t-1,0),&\epsilon_1\equiv1\pmod8,\\
-  1,&\epsilon_1\equiv5\pmod8.
- \end{cases}
-\]
-When we substitute the two Gross forms shown above and $(a_1,a_2)=(0,t)$
-into the dyadic formula \cite[Theorem 4.4]{YangDyadicDensities} from Yang's
-work, the result is
-\begin{equation}\label{eq:dyadic-density}
- \alpha_2(T,L_{N,2})=
- \begin{cases}
-  12c_t(\epsilon_1),&2\nmid D,\\
-  96c_t(\epsilon_1),&2\mid D,
+  t+1,&p\nmid DM_0,\text{ unit first divisor},\\
+  2,&p\nmid DM_0,\text{ first divisor }p,\\
+  2,&p\mid D,\\
+  2t,&p\mid M_0.
  \end{cases}
 \end{equation}
-whenever the Hasse invariants of both $T$ and the ambient ternary space are
-equal, and zero otherwise. As for the normalized Whittaker factor in \cite[Theorem
-5.11]{BruinierLiMoller}, we can read from there that it is given by
-$\beta_2(T)=c_t(\epsilon_1)$. In
-the KRY orbital normalization used here, $\lambda_2(T)=\beta_2(T)$ in the split case, and $\lambda_2(T)=2\beta_2(T)$
-in the ramified case. 
-As we can see, this comes from the conversion recorded below.
+These tree and order identifications are standard; see
+\cite[Equation (23.2.4), Theorem 13.3.11, Lemma 23.5.15, and Sections
+23.5.11--23.5.16]{Voight}.
 
-For completeness, we now record the normalization to the factor in
-\eqref{eq:kry-product}.  The local Siegel--Weil comparison
-\cite[Proposition 5.3.3, Equation (5.3.46), and Lemma 5.7.1]
-{KudlaRapoportYang} gives
+It remains to count at $2$.  Since $-d,-e$ are odd fundamental
+discriminants and $b$ is odd, $d\equiv e\equiv3\pmod4$ and
+$t=v_2(\det T)\geq2$.  An integral shear gives
 \[
- O_{T,2}=
- \frac{|D|_2^{-2}}{[L_{N,2}^{\#}:L_{N,2}]}
- \alpha_2(T,L_{N,2}).
-\] As we can check, the $|2|_2^{1/2}$ factors drop out of both the
-density--Whittaker and the Whittaker--orbital comparisons.  In the first row this gives
-$O_{T,2}=12c_t/2^5=(3/8)c_t$; in the second it gives
-$O_{T,2}=4\cdot96c_t/2^7=3c_t$, since $|D|_2=1/2$.
-Finally, we see that dividing by the compact volumes gives \[ \lambda_2(T)=
-\begin{cases} c_t(\epsilon_1),&2\nmid D,\\ 2c_t(\epsilon_1),&2\mid D,
-\end{cases} \] in all represented cases and zero elsewhere.  In particular, we conclude that $\lambda_2(T)\leq2(t+1)\ll(t+1)^2$ carries
-an implicit absolute constant.
-
-In addition to this, we can also note that the same representation conditions imply that any odd
-prime factor which divides $DM_0$ must necessarily divide $\det T=de-b^2$ as
-well. We can now combine the preceding bounds in \eqref{eq:kry-product}, prime by
-prime. In that way we can write
-\[
- |R_T(D,M_0)|\ll
- \prod_{p\mid\det T}\bigl(v_p(\det T)+1\bigr)^2
- =\dd(|\det T|)^2.
+ T\sim\operatorname{diag}(\epsilon_1,2^t\epsilon_2),
+ \qquad \epsilon_1\equiv1\ \hbox{or}\ 5\pmod8.
 \]
-Given that \eqref{eq:two-index} holds, and also since both $|\det T|\ll_{r_0}\Delta^2$
-and $\Delta\leq N^A$ hold, we can then establish \eqref{eq:rt-bound} from the
-standard divisor bound.
-\end{proof} \begin{proof}[Proof of \cref{thm:pair-intro}] For each ordered pair of quotient centers, we will need to choose lifts that realize the
+In the split algebra the Gross lattice of the standard maximal order is
+\[
+ L_2=\left\{\begin{pmatrix}z&2v\\2u&-z\end{pmatrix}:
+ z,u,v\in\Z_2\right\},\qquad Q=z^2+4uv.
+\]
+For a unit-norm first vector $x$, membership in the Gross lattice of a
+maximal order $O'$ is equivalent to $(1+x)/2\in O'$.  Indeed, writing
+$x=2a-\trd(a)$, the oddness of $Q(x)=\trd(a)^2-4\nrd(a)$ forces
+$\trd(a)$ to be odd; the converse follows from trace one.  If
+$\epsilon_1\equiv5\pmod8$, this element generates the unramified maximal
+quadratic order, whose stable lattices form one homothety class.  If
+$\epsilon_1\equiv1\pmod8$, scale by a unit and take
+$x=\operatorname{diag}(1,-1)$.  The integral idempotent $(1+x)/2$ forces
+every stable lattice to split along the two eigenlines.  Writing
+$y=\left(\begin{smallmatrix}0&r\\u&0\end{smallmatrix}\right)$, the initial
+Gross integrality gives $r,u\in2\Z_2$, while
+$Q(y)=ru=2^t\epsilon_2$.  Gross integrality at $\Lambda_n$ is equivalent to
+\[
+ 1-v_2(r)\leq n\leq v_2(u)-1,
+\]
+which gives at most $t-1$ vertices.  In the dyadic division algebra the
+unique maximal order is again invariant under conjugation and the
+projective unit quotient has order two.  Consequently
+\begin{equation}\label{eq:dyadic-local-counts}
+ \begin{aligned}
+  c_2(T)&\leq1 &&(\epsilon_1\equiv5\bmod8),\\
+  c_2(T)&\leq t-1 &&(\epsilon_1\equiv1\bmod8),\\
+  c_2(T)&=2 &&(2\mid D).
+ \end{aligned}
+\end{equation}
+
+Every nontrivial local factor is therefore attached to a prime divisor of
+$\det T$ and, in every branch of
+\eqref{eq:odd-local-counts}--\eqref{eq:dyadic-local-counts},
+\[
+ c_p(T)\leq\bigl(v_p(\det T)+1\bigr)^2.
+\]
+At an odd prime dividing $D M_0$, the same rank-one reductions used above
+also give $p\mid\det T$, proving $N^\flat\mid b^2-de$.  Thus
+\[
+ |R_T(D,M_0)|\leq2\prod_{p\mid\det T}
+ \bigl(v_p(\det T)+1\bigr)^2=2\dd(|\det T|)^2.
+\]
+Together with \eqref{eq:two-index}, the bounds
+$|\det T|\ll_{r_0}\Delta^2$ and $\Delta\leq N^A$, and the standard divisor
+bound, this proves \eqref{eq:rt-bound}, uniformly in the admissible
+factorization.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:pair-intro}] For each ordered pair of quotient centers, we will need to choose lifts that realize the
 respective quotient distance after shifting one of the two by a member of
 $\Gamma_N$. In turn, we see that the corresponding simultaneous $\Gamma_N$-class of
 primitive vectors is counted by the appropriate $R_T$. By \cref{lem:normalization}, we see that its characteristic matrix is
@@ -480,7 +463,17 @@ For a nonsingular pair we will need \cref{lem:local-factors}. If the pair is at 
 \[
  m=\frac{b^2-de}{N^\flat}.
 \]
-Then, from Equations \eqref{eq:distance-b} and \eqref{eq:n-flat}, we can read off
+The form $Q=-\nrd$ has signature $(2,1)$. The reverse
+Cauchy--Schwarz inequality on its negative cone gives
+\[
+ B_Q(x,y)^2\geq4Q(x)Q(y)=4de,
+\]
+with equality only when $x$ and $y$ are proportional. Since
+$b=B_Q(x,y)/2$ and $T$ is nonsingular, the inequality is strict here;
+therefore $b^2-de>0$. Together with \eqref{eq:n-flat}, this shows that
+$m$ is a positive integer. Since the standing hypothesis gives
+$N/N^\flat\leq2^8$, Equations
+\eqref{eq:distance-b} and \eqref{eq:n-flat} give
 \[
  1\leq m\ll_{r_0}1+\frac{\Delta^2}{N}.
 \]
@@ -499,7 +492,15 @@ proves the theorem.
 We now place \cref{thm:pair-intro} in Pasten's family. For an abc triple,
 let $N$ be the conductor of the Frey curve attached to that triple, and
 choose an admissible factorization $N=DM$. Let $0<\delta<1/10$ be a
-parameter to be fixed at the end. Pasten's sieve \cite[Theorem 11.1 and
+parameter to be fixed at the end.  For this Frey curve, Pasten records
+\[
+ N=2^r\prod_{\substack{p\mid abc\\p>2}}p,
+ \qquad 0\leq r\leq8;
+\]
+at every odd prime $p\mid abc$ one has $v_p(N)=1$
+\cite[Section 3 and proof of Theorem 16.8]{Pasten}.  Thus the odd part of
+$N$ is square-free and the hypotheses of \cref{sec:setup} hold for every
+admissible factorization used below.  Pasten's sieve \cite[Theorem 11.1 and
 Corollary 11.2]{Pasten}, along with
 \begin{equation}\label{eq:parameters}
  x=N^{2/3+\delta},\qquad \vartheta=\delta/5,
@@ -613,7 +614,8 @@ Under \eqref{eq:parameters}--\eqref{eq:sieve}, we can compute that the $N$-expon
 It is the last of these three terms that is the limiting one here, and in this way we obtain the following proposition.
 
 \begin{proposition}\label{prop:first-moment}
-In the notation that we have set up in the preceding discussion,
+In the notation that we have set up in the preceding discussion, uniformly
+in the admissible factorization $N=DM$,
 \[
  \frac1H\sum_dT_d(F_N)\ll N^{\tau+\eps},
  \qquad
@@ -693,8 +695,9 @@ property that $M$ is divisible by at least two odd primes, we have the
 following estimate
 \[
  \prod_{p\mid D}v_p(\Delta_E)
- \ll_\eps N^{1+\eps}\|f\|_{\mathrm{Pas}}^{-2}.
+ \ll_\eps N^{1+\eps}\|f\|_{\mathrm{Pas}}^{-2},
 \]
+uniformly in the admissible factorization.
 \end{proposition}
 
 \begin{proof}
@@ -725,7 +728,10 @@ $N$ the right-hand side is at most
 Finally, the non-normalized Petersson norms of Pasten take
 into account the same physical hyperbolic measure \cite[Section
 4.6]{Pasten}, and therefore we can conclude that
-$\|f_{D,M}\|_2=\|f\|_{\mathrm{Pas}}$. This proves the statement while additionally showing explicitly that the
+$\|f_{D,M}\|_2=\|f\|_{\mathrm{Pas}}$. All constants just used are absolute
+or depend only on $\eps$ (the Manin-constant theorem is applied with the
+fixed exceptional set $\{2\}$), so the estimate is uniform in $(D,M)$.
+This proves the statement while additionally showing explicitly that the
 Frey branch contributes no further factor of $D$.
 \end{proof}
 
@@ -735,9 +741,11 @@ cell estimate
 \begin{equation}\label{eq:cell}
  \prod_{p\mid D}v_p(\Delta_E)
  \ll_\eps N^{q_\delta+\eps}M,\qquad
- q_\delta=1+\left(\frac23+\delta\right)+2\tau
+q_\delta=1+\left(\frac23+\delta\right)+2\tau
  =\frac53+\frac{13}{5}\delta+\frac{12}{5}\delta^2.
 \end{equation}
+The implied constant in \eqref{eq:cell} is uniform in the admissible
+factorization.
 
 It remains to distribute the factor $M$. In what follows we write the odd part of $N$ as $p_1\cdots p_m$, but the
 bounded factor $2^r$ remains. If $m$ exceeds a fixed cutoff, then we can be sure that all subsequent
@@ -757,7 +765,18 @@ cyclically with
 \]
 We can note that all valuations occur on $m-2$ left-hand sides, and that all
 odd primes are included in two $M_j$. If $Q_{\mathrm{odd}}=\prod_{i=1}^m\bigl(2v_{p_i}(abc)\bigr)
-=\prod_{i=1}^m v_{p_i}(\Delta_E)$, multiplication gives
+=\prod_{i=1}^m v_{p_i}(\Delta_E)$, let $C_{\delta,\eps}\geq1$ be the uniform implied
+constant in \eqref{eq:cell}.  Multiplication gives
+\[
+ Q_{\mathrm{odd}}^{m-2}
+ \leq C_{\delta,\eps}^mN^{m(q_\delta+\eps)}\prod_{j=1}^mM_j,
+ \qquad
+ \prod_{j=1}^mM_j
+ =2^{r(m-2)}N^2.
+\]
+Since $m/(m-2)\leq2$ for even $m\geq4$ and $r\leq8$, taking the
+$(m-2)$-nd root leaves at most the bounded constant
+$C_{\delta,\eps}^2 2^8$.  Thus
 \begin{equation}\label{eq:even-prop}
  Q_{\mathrm{odd}}
  \ll N^{q_\delta+(2q_\delta+2)/(m-2)+O(\eps)}.
@@ -767,7 +786,15 @@ If $m$ is odd, use cyclic triples
  M_j=2^rp_jp_{j+1}p_{j+2},\qquad
  D_j=\frac{p_1\cdots p_m}{p_jp_{j+1}p_{j+2}},
 \]
-which gives
+for which
+\[
+ Q_{\mathrm{odd}}^{m-3}
+ \leq C_{\delta,\eps}^mN^{m(q_\delta+\eps)}\prod_{j=1}^mM_j,
+ \qquad
+ \prod_{j=1}^mM_j=2^{r(m-3)}N^3.
+\]
+Here $m/(m-3)\leq5/2$ for odd $m\geq5$, so the rooted constant is at
+most $C_{\delta,\eps}^{5/2}2^8$.  Consequently
 \begin{equation}\label{eq:odd-prop}
  Q_{\mathrm{odd}}
  \ll N^{q_\delta+(3q_\delta+3)/(m-3)+O(\eps)}.
@@ -823,9 +850,9 @@ $V_N=\vol(X_N)$ & its hyperbolic volume\\
 $L_N\subset B^0$ & Gross lattice of \cite[Equation
 (2.9)]{BruinierLiMoller}\\
 $G=\operatorname{SO}(B^0)$ & $\simeq B^\times/\Q^\times$\\
-$\Kc_p$, $\Kc=\prod_p\Kc_p$ & image of $R_{N,p}^\times$ in $G(\Q_p)$, and its product\\
+$\Kc_p$, $\Kc=\prod_p\Kc_p$ & local projective unit image and its product\\
 $T$, $R_T(D,M)$ & characteristic matrix, and its norm-one class set\\
-$\lambda_p(T)$, $\alpha_p$ & local orbital factor and local density\\
+$S_p(T)$, $c_p(T)$ & local integral-coset set and its cardinality\\
 $-d$, $-e$ & odd fundamental CM discriminants\\
 $h_d$ & class number of $\Q(\sqrt{-d})$\\
 $\mathscr C_d$ & the complete $2h_d$-element Galois multiset\\
