@@ -5,8 +5,8 @@
 
     arXiv:submit/7979306 [math.NT] 22 Aug 2026
 
-The submission was declined by arXiv moderation and was not announced, so the paper has
-no arXiv identifier. The file is kept unchanged as a record of what was submitted.
+Submitted to arXiv on 2026-08-22. The submission was not announced, so the paper has no
+arXiv identifier. The file is kept unchanged as a record of what was submitted.
 
 - Source: release `v1` of this repository, byte-identical to the submitted payload.
 - 17 pages. The current manuscript at the repository root is release `v2` (18 pages).
