@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "An Aggregate CM-Pair Estimate and a 5/3 Bound for Valuation Products of abc Triples"
+authors:
+  - family-names: Zhang
+    given-names: Ruiyi
+    affiliation: Independent Researcher
+doi: 10.5281/zenodo.23247745
+url: "https://doi.org/10.5281/zenodo.23247745"
+date-released: 2026-10-08
+preferred-citation:
+  type: article
+  title: "An Aggregate CM-Pair Estimate and a 5/3 Bound for Valuation Products of abc Triples"
+  authors:
+    - family-names: Zhang
+      given-names: Ruiyi
+      affiliation: Independent Researcher
+  year: 2026
+  publisher:
+    name: Zenodo
+  doi: 10.5281/zenodo.23247745
+  url: "https://doi.org/10.5281/zenodo.23247745"
