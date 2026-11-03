@@ -39,9 +39,8 @@ subconvexity estimate is required.
   negative cone of the signature `(2,1)` form; the bibliography is regenerated and
   complete.
 - Release `v1` (source frozen 2026-08-21): the earlier text, whose Section 3 obtained
-  the same local factors from the published local-density formulas. Its source is
-  byte-identical to the arXiv submission payload `submit/7979306` of 2026-08-22 and is
-  kept as a provenance record.
+  the same local factors from the published local-density formulas. It is kept as a
+  provenance record.
 
 The theorem statements and the exponent `5/3` are the same in both.
 
