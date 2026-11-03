@@ -2,7 +2,7 @@
 
 Ruiyi Zhang
 
-DOI: [10.5281/zenodo.23247745](https://doi.org/10.5281/zenodo.23247745)
+DOI: [10.5281/zenodo.23247744](https://doi.org/10.5281/zenodo.23247744)
 
 For pairwise coprime positive integers with `a + b = c`, write `R = rad(abc)` and
 `P(abc) = prod_{p | abc} v_p(abc)`. The manuscript proves
@@ -55,7 +55,7 @@ reference, 18 pages.
 
 ## Citation
 
-Ruiyi Zhang, *An Aggregate CM-Pair Estimate and a 5/3 Bound for Valuation Products of abc Triples*, preprint, Zenodo, 2026. https://doi.org/10.5281/zenodo.23247745
+Ruiyi Zhang, *An Aggregate CM-Pair Estimate and a 5/3 Bound for Valuation Products of abc Triples*, preprint, Zenodo, 2026. https://doi.org/10.5281/zenodo.23247744
 
 ```bibtex
 @misc{zhang2026valuation,
@@ -64,7 +64,7 @@ Ruiyi Zhang, *An Aggregate CM-Pair Estimate and a 5/3 Bound for Valuation Produc
   year      = {2026},
   publisher = {Zenodo},
   note      = {Preprint},
-  doi       = {10.5281/zenodo.23247745},
-  url       = {https://doi.org/10.5281/zenodo.23247745}
+  doi       = {10.5281/zenodo.23247744},
+  url       = {https://doi.org/10.5281/zenodo.23247744}
 }
 ```
